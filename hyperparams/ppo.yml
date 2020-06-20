@@ -1,0 +1,23 @@
+CartPole-v0:
+    n_envs: 8
+    n_steps: 32
+    learning_rate: 0.001
+    scale_reward: True
+    model:
+        hidden_dims: [64, 64]
+
+atari:
+    n_envs: 8
+    n_steps: 128
+    epoch: 4
+    mini_batch_size: 256
+    gamma: 0.99
+    lmbda: 0.95
+    learning_rate: 0.00025
+    grad_clip_norm: 0.5
+    eps_clip: 0.1
+    value_coef: 0.5
+    entropy_coef: 0.01
+    normalize_adv: True
+    use_gae: True
+    scale_reward: False
